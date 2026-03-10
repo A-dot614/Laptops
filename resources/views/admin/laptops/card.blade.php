@@ -4,7 +4,7 @@
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
             <div class="flex items-center gap-3">
                 <div class="flex items-center text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">
-                    <a href="{{ route('index') }}" class="hover:text-cyan-400 transition-colors">Fleet</a>
+                    <a href="{{ route('admin.laptops.index') }}" class="hover:text-cyan-400 transition-colors">Fleet</a>
                     <span class="mx-3 text-slate-800">/</span>
                     <span class="text-white">Node_Details</span>
                 </div>

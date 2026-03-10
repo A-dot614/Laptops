@@ -14,6 +14,7 @@ class LaptopController extends Controller
     }
     
     public function detail(Laptop $shop){
+        $laptop = Laptop::all();
         return view('site.detail', compact('shop'));
     }
 

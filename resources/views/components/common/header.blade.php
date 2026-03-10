@@ -1,3 +1,4 @@
+<div class="h-[80px]">
 <nav class="fixed top-0 left-0 w-full z-[100] transition-all duration-500">
     <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent opacity-50 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent w-20 animate-[scan_3s_linear_infinite]"></div>
@@ -74,5 +75,4 @@
         100% { transform: translateX(1000%); }
     }
 </style>
-
-<div class="h-[80px]"></div>
+</div>

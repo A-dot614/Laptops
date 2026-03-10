@@ -5,7 +5,7 @@
             <div>
                 <h2 class="text-xs font-black uppercase tracking-[0.4em] text-cyan-500/80 mb-2">Network Inventory</h2>
                 <h1 class="text-4xl font-black text-white tracking-tighter uppercase">Fleet Management</h1>
-                <p class="text-slate-500 text-sm mt-2 font-light">Monitor and configure <span class="text-white font-bold">{{ $laptops->count() }}</span> active nodes across the grid.</p>
+                <p class="text-slate-500 text-sm mt-2 font-light">Monitor and configure <span class="text-white font-bold"></span> active nodes across the grid.</p>
             </div>
             
             <a href="{{ route('create') }}" class="relative group">
@@ -53,7 +53,7 @@
                         </tr>
                     </thead>
 
-                    @if($laptops->isNotEmpty())
+                    @if($laptop->isNotEmpty())
                     <tbody class="divide-y divide-white/5">
                         @foreach($laptops as $laptop)
                         <tr class="hover:bg-white/[0.03] transition-all group">

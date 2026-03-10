@@ -23,11 +23,11 @@
     <nav class="flex-1 px-4 py-2 space-y-1 overflow-y-auto">
         <p class="px-4 py-2 text-[10px] font-black text-slate-600 uppercase tracking-[0.3em] mb-2">Main Menu</p>
 
-        <a href="{{ route('dashboard') }}" 
+        <a href="{{ route('admin.dashboard') }}" 
            class="group flex items-center gap-3 px-4 py-3.5 rounded-2xl transition-all duration-300 relative overflow-hidden
-           {{ request()->routeIs('dashboard') ? 'bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 shadow-[0_0_20px_rgba(34,211,238,0.1)]' : 'text-slate-500 hover:bg-white/5 hover:text-white' }}">
+           {{ request()->routeIs('admin.dashboard') ? 'bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 shadow-[0_0_20px_rgba(34,211,238,0.1)]' : 'text-slate-500 hover:bg-white/5 hover:text-white' }}">
             
-            <svg class="w-5 h-5 {{ request()->routeIs('dashboard') ? 'text-cyan-400' : 'text-slate-500 group-hover:text-white' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <svg class="w-5 h-5 {{ request()->routeIs('admin.dashboard') ? 'text-cyan-400' : 'text-slate-500 group-hover:text-white' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                 <rect x="3" y="3" width="7" height="7" rx="1" />
                 <rect x="14" y="3" width="7" height="7" rx="1" />
                 <rect x="14" y="14" width="7" height="7" rx="1" />
@@ -40,11 +40,11 @@
             @endif
         </a>
 
-        <a href="{{ route('index') }}" 
+        <a href="{{ route('admin.laptops.index') }}" 
            class="group flex items-center gap-3 px-4 py-3.5 rounded-2xl transition-all duration-300 relative
-           {{ request()->routeIs('index') ? 'bg-cyan-500/10 text-cyan-400 border border-cyan-500/20' : 'text-slate-500 hover:bg-white/5 hover:text-white' }}">
+           {{ request()->routeIs('admin.laptops.index') ? 'bg-cyan-500/10 text-cyan-400 border border-cyan-500/20' : 'text-slate-500 hover:bg-white/5 hover:text-white' }}">
             
-            <svg class="w-5 h-5 {{ request()->routeIs('index') ? 'text-cyan-400' : 'text-slate-500 group-hover:text-white' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <svg class="w-5 h-5 {{ request()->routeIs('admin.laptops.index') ? 'text-cyan-400' : 'text-slate-500 group-hover:text-white' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                 <path d="M4 6h16M4 12h16M4 18h7" />
             </svg>
             <span class="text-xs font-bold uppercase tracking-widest">Inventory</span>
